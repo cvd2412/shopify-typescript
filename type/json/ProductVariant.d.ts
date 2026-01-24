@@ -16,6 +16,14 @@ export type ProductVariant = {
   image_id: number | null;
   weight: number;
   weight_unit: 'g' | 'kg';
+  unit_price?: string;
+  unit_price_measurement?: {
+    measured_type: string;
+    quantity_value: string;
+    quantity_unit: string;
+    reference_value: number;
+    reference_unit: string;
+  };
   requires_shipping: boolean;
 
   // Deprecated properties

@@ -23,6 +23,14 @@ export type ProductVariant = {
     max: number | null;
     min: number;
   };
+  unit_price?: string;
+  unit_price_measurement?: {
+    measured_type: string;
+    quantity_value: string;
+    quantity_unit: string;
+    reference_value: number;
+    reference_unit: string;
+  };
 
   // Deprecated properties
   /** @deprecated Prefer to use options instead. */
