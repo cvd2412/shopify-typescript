@@ -1,4 +1,4 @@
-import { PreviewImage } from '../liquid/PreviewImage';
+import type { PreviewImage } from '../liquid/PreviewImage';
 
 export type ProductMedia = {
   alt: string | null;

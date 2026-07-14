@@ -1,5 +1,6 @@
-import { FeaturedVariantMedia } from '../liquid/FeaturedVariantMedia';
-import { SellingPlanAllocation } from './SellingPlanAllocation';
+import type { FeaturedVariantMedia } from '../liquid/FeaturedVariantMedia';
+import type { FeaturedVariantImage } from './FeaturedVariantImage';
+import type { SellingPlanAllocation } from './SellingPlanAllocation';
 
 export type QuantityPriceBreak = {
   minimum_quantity: number;
@@ -15,18 +16,7 @@ export type ProductVariant = {
   sku: string | null;
   requires_shipping: boolean;
   taxable: boolean;
-  featured_image: {
-    id: number;
-    product_id: number;
-    position: number;
-    created_at: string;
-    updated_at: string;
-    alt: string | null;
-    width: number;
-    height: number;
-    src: string;
-    variant_ids: number[];
-  } | null;
+  featured_image: FeaturedVariantImage | null;
   available: boolean;
   name: string;
   public_title: string | null;
